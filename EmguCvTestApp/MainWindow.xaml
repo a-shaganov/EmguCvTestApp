@@ -1,0 +1,21 @@
+﻿<Window x:Class="EmguCvTestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmguCvTestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Grid.Row="0" x:Name="btnVideo" Width="150" Content="Load picture or video" Click="btnLoad_Click" Margin="2"/>
+        </StackPanel>
+        <Image Grid.Row="1" x:Name="srcImg" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10"/>
+        
+    </Grid>
+</Window>
